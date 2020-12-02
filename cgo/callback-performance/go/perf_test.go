@@ -1,4 +1,4 @@
-package callback
+package go_callback
 
 import (
 	"testing"
