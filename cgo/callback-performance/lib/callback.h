@@ -29,4 +29,4 @@ typedef void (*callback_int_t)(int value);
  */
 bool register_recv_int(callback_int_t cb);
 
-#endif // PERF_H
+#endif // CALLBACK_H
