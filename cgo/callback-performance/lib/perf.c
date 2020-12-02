@@ -1,4 +1,4 @@
-/* Copyright (C) Bill Segall 2020, All rights Reserved */
+// Copyright (C) Bill Segall 2020, All rights reserved
 
 #include <stdio.h>
 #include <stdlib.h>

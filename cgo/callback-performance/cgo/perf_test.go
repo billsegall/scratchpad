@@ -1,3 +1,4 @@
+// Copyright (C) Bill Segall 2020, All rights reserved
 package cgo_callback
 
 import (

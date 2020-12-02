@@ -1,3 +1,4 @@
+// Copyright (C) Bill Segall 2020, All rights reserved
 package go_callback
 
 import (
@@ -15,11 +16,11 @@ func callf(sendme int, count int, threaded bool) bool {
 		return true
 	}
 
-	if (!threaded) {
+	if !threaded {
 		for i := 0; i < count; i++ {
 			callback(sendme)
 		}
-		return true;
+		return true
 	}
 	return false
 }

@@ -1,3 +1,4 @@
+// Copyright (C) Bill Segall 2020, All rights reserved
 package cgo_callback
 
 // We can't call cgo in go tests so we provide cgo wrapper functions here
@@ -52,4 +53,3 @@ func OneToOneN(n int) {
 func OneToN(n int) {
 	C.callf(0x0BADBEEF, C.int(n), false)
 }
-
