@@ -35,8 +35,8 @@ main(int arcg, char *argv[]) {
     fprintf(stderr, "setup() failed\n");
     exit(1);
   }
-  if (!register_recv_int(recv_int)) {
-      fprintf(stderr, "register_recv_int() failed\n");
+  if (!register_callback(recv_int)) {
+      fprintf(stderr, "register_callback() failed\n");
       exit(1);
   }
 

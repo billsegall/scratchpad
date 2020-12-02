@@ -97,7 +97,7 @@ bool setup(void) {
     return true;
 }
 
-bool register_recv_int(callback_int_t cb) {
+bool register_callback(callback_int_t cb) {
     int err = 0;
 
     LOCK();

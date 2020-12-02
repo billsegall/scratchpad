@@ -27,6 +27,6 @@ typedef void (*callback_int_t)(int value);
  *
  * Returns true on success
  */
-bool register_recv_int(callback_int_t cb);
+bool register_callback(callback_int_t cb);
 
 #endif // CALLBACK_H
