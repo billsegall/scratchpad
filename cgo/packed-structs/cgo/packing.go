@@ -51,8 +51,6 @@ func main() {
 	var ct3_4 C.t3_p4_t
 	var ct3_8 C.t3_p8_t
 
-	fmt.Printf("unsafe.Sizeof(int64) = %d\n", unsafe.Sizeof(types.Int64))
-
 	fmt.Printf("sizeof(got1) = %d, offsets:\n"+
 		"\tint32_t\t%d\n"+
 		"\tint8_t\t%d\n"+
@@ -62,7 +60,7 @@ func main() {
 		"\tint32_t\t%d\n"+
 		"\tint32_t\t%d\n"+
 		"\tint32_t\t%d\n"+
-		"\tint64_t\t%d\n",
+		"\tint64_t\t%d\n\n",
 
 		unsafe.Sizeof(got1),
 		unsafe.Offsetof(got1.i32),
@@ -75,7 +73,7 @@ func main() {
 		unsafe.Offsetof(got1.i32d),
 		unsafe.Offsetof(got1.i64))
 
-	fmt.Printf("sizeof(ct1_4) = %d, offsets:\n\n"+
+	fmt.Printf("sizeof(ct1_4) = %d, offsets:\n"+
 		"\tint32_t\t%d\n"+
 		"\tint8_t\t%d\n"+
 		"\tuint8_t\t%d\n"+
@@ -84,7 +82,7 @@ func main() {
 		"\tint32_t\t%d\n"+
 		"\tint32_t\t%d\n"+
 		"\tint32_t\t%d\n"+
-		"\tint64_t\t%d\n",
+		"\tint64_t\t%d\n\n",
 		unsafe.Sizeof(ct1_4),
 		unsafe.Offsetof(ct1_4.i32),
 		unsafe.Offsetof(ct1_4.i8),
