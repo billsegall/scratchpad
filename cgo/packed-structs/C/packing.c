@@ -35,7 +35,7 @@ main(int arcg, char *argv[]) {
             "\tint32_t\t%ld\n"
             "\tint32_t\t%ld\n"
             "\tint32_t\t%ld\n"
-            "\tint64_t\t%ld\n",
+            "\tint64_t\t%ld\n\n",
 
             sizeof(t1p2),
             (uintptr_t)&t1p2.i32 - (uintptr_t)&t1p2,
@@ -58,7 +58,7 @@ main(int arcg, char *argv[]) {
             "\tint32_t\t%ld\n"
             "\tint32_t\t%ld\n"
             "\tint32_t\t%ld\n"
-            "\tint64_t\t%ld\n",
+            "\tint64_t\t%ld\n\n",
 
             sizeof(t1p4),
             (uintptr_t)&t1p4.i32 - (uintptr_t)&t1p4,
@@ -81,7 +81,7 @@ main(int arcg, char *argv[]) {
             "\tint32_t\t%ld\n"
             "\tint32_t\t%ld\n"
             "\tint32_t\t%ld\n"
-            "\tint64_t\t%ld\n",
+            "\tint64_t\t%ld\n\n",
 
             sizeof(t1p8),
             (uintptr_t)&t1p8.i32 - (uintptr_t)&t1p8,
@@ -97,7 +97,7 @@ main(int arcg, char *argv[]) {
         fprintf(stdout,
                 "sizeof(t2_p2_t) == %ld\n"
                 "sizeof(t2_p4_t) == %ld\n"
-                "sizeof(t2_p8_t) == %ld\n",
+                "sizeof(t2_p8_t) == %ld\n\n",
                 
                 sizeof(t2p2),
                 sizeof(t2p4),
