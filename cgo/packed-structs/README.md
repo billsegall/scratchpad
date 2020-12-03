@@ -6,7 +6,7 @@ directive and so we need to check any packed structs and if not
 conformant with the host platform, use byte slicing to work around the
 `go` / `C` boundaries.
 
-It's also confiemed that the structures of intererest are ok as they are.
+It's also confirmed that the structures of intererest are ok as they are.
 
 Building and executing
 ----------------------
@@ -19,7 +19,8 @@ To build and execute the C test program:
 
 To build and execute the cgo:
 ```
-    go test ./...
+    go build
+    ./cgo
 ```
 
 TODO
