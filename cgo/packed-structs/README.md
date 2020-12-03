@@ -6,7 +6,7 @@ directive and so we need to check any packed structs and if not
 conformant with the host platform, use byte slicing to work around the
 `go` / `C` boundaries.
 
-It's also confirmed that the structures of intererest are ok as they are.
+It's also confirmed that the structures of interest are ok as they are.
 
 Building and executing
 ----------------------
