@@ -29,11 +29,11 @@ typedef struct {
 } t2_p2_t;
 
 typedef struct {
-    int8_t i8;
+    int8_t  i8a;
     int32_t i32;
-    int64_t i64;
+    int8_t  i8n;
+    int16_t i16;
 } t3_p2_t;
-
 
 #pragma pack(pop)
 
@@ -64,9 +64,10 @@ typedef struct
 t2_p4_t;
 
 typedef struct {
-    int8_t i8;
+    int8_t  i8a;
     int32_t i32;
-    int64_t i64;
+    int8_t  i8n;
+    int16_t i16;
 } t3_p4_t;
 
 #pragma pack(pop)
@@ -85,8 +86,7 @@ typedef struct
     int32_t i32c;
     int32_t i32d;
     int64_t i64;
-}
-t1_p8_t;
+} t1_p8_t;
 
 typedef struct
 {
@@ -94,16 +94,14 @@ typedef struct
     int64_t i64b;
     int64_t i64c;
     uint8_t pad1[(2 * 64u) - (3 * sizeof(int64_t))];
-}
-t2_p8_t;
+} t2_p8_t;
 
 typedef struct {
-    int8_t i8;
+    int8_t  i8a;
     int32_t i32;
-    int64_t i64;
+    int8_t  i8n;
+    int16_t i16;
 } t3_p8_t;
-
-
 
 #pragma pack(pop)
     
